@@ -1,21 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
-    <link rel="stylesheet" href="finalproject.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="finalproject.js" defer></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Final Project Draft</title>
+   <link rel="stylesheet" href="finalproject.css">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="finalproject.js" defer></script>
 </head>
 <body>
-    <h1>SLUGCAFE</h1>
-    <button id="good-button">Food</button>
-    <div id="output"></div>
-     <button id="good-button">Drinks</button>
-    <div id="output"></div>
-</body>
-</html>
 
+
+   <button id="resource-page">UCSC Basic Needs Page!</button>
+ 
+   <div id="output"></div>
+
+
+ <div id="main-page" class="page">
+       <h1>Main Page</h1>
+ <button id="to-food-page">Make a Meal!</button>
+       <button id="to-drinks-page">Make a Drink!</button>
+   </div>
+
+
+   <!-- Food page covers the screen with placeholder.jpg -->
+   <div id="food-page" class="page-hidden">
+       <h1>Make a Meal!</h1>
+       <button class="back-btn">Back to Main</button>
+       <!-- FOOD SELECTION -->
+<div id="food-options">
+
+    <h2>Choose Your Food!</h2>
+
+    <button class="food-choice" data-food="bagel">
+         Bagel
+    </button>
+
+    <button class="food-choice" data-food="sandwich">
+         Sandwich
+    </button>
+
+    <button class="food-choice" data-food="cookie">
+         Cookie
+    </button>
+
+    <button class="food-choice" data-food="brownie">
+        Brownie
+    </button>
+
+    
+
+</div>
+
+
+<!-- FOOD PREPARATION -->
+<div id="food-workspace" style="display:none;">
+
+    <h2 id="selected-food"></h2>
+
+    <h3>Choose Your Ingredients!</h3>
+
+    <!-- JavaScript adds draggable ingredients here -->
+    <div id="food-ingredients"></div>
+
+    <h3>Drag Ingredients Onto Your Food!</h3>
+
+    <!-- Food and ingredients appear here -->
+    <div id="food-tray" class="drop-zone">
+
+        <div id="food-display"></div>
+
+        <div id="food-added-ingredients"></div>
+
+        <p>Drop ingredients here!</p>
+
+    </div>
+
+    <button id="check-food">
+        Check Recipe
+    </button>
+
+    <button id="reset-food">
+        Reset Food
+    </button>
+
+    <button id="back-to-food">
+        Choose Another Food
+    </button>
+
+    <p id="food-feedback"></p>
+
+</div>
+   </div>
+
+
+   <!-- Drink page covers the screen with placeholder.jpg -->
+   <div id="drinks-page" class="page-hidden">
+       <h1>Make a Drink!</h1>
+       <button class="back-btn">Back to Main</button>
+
+
+<!-- DRINK SELECTION -->
+<div id="drink-options">
+
+    <h2>Choose Your Drink!</h2>
+
+    <button class="drink-choice" data-drink="coffee">
+         Coffee
+    </button>
+
+    <button class="drink-choice" data-drink="latte">
+         Latte
+    </button>
+
+    <button class="drink-choice" data-drink="tea">
+         Tea
+    </button>
+
+    <button class="drink-choice" data-drink="lemonade">
+         Lemonade
+    </button>
+
+</div>
+
+
+<!-- DRINK PREPARATION -->
+<div id="drink-workspace" style="display:none;">
+
+    <h2 id="selected-drink"></h2>
+
+    <h3>Choose Your Ingredients!</h3>
+
+    <!-- JavaScript adds draggable ingredients here -->
+    <div id="drink-ingredients"></div>
+
+    <h3>Drag Ingredients Into Your Drink!</h3>
+
+    <!-- Drink and ingredients appear here -->
+    <div id="drink-tray" class="drop-zone">
+
+        <div id="drink-display"></div>
+
+        <div id="drink-added-ingredients"></div>
+
+        <p>Drop ingredients here!</p>
+
+    </div>
+
+    <button id="check-drink">
+        Check Recipe
+    </button>
+
+    <button id="reset-drink">
+        Reset Drink
+    </button>
+
+    <button id="back-to-drinks">
+        Choose Another Drink
+    </button>
+
+    <p id="drink-feedback"></p>
+   </div>
+
+
+ 
+
+
+
+
+   </div>
+
+
+
+
+
+
+</div>
+  
+</body>
 
 

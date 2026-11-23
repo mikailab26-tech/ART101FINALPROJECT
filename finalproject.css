@@ -1,24 +1,206 @@
-body {
-    background-color: rgb(20, 162, 239);
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    color: black;
-}
-
-button {
+/* RESOURCE BUTTON */
+#resource-page {
+    background-color: #6ac46d;
+    color: white;
+    border: none;
     padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#output {
-    margin-top: 20px;
-    font-size: 20px;
+#resource-page:hover {
+    background-color: #45a049;
 }
 
-button {
-    background-color: yellow;
-    width: 250px;
+
+/* MAIN PAGE SETTINGS */
+body {
+    margin: 0;
+}
+
+html {
+    background-color: aquamarine;
+}
+
+.page-hidden {
+    display: none;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* BACKGROUND IMAGES */
+#main-page {
+    background-image: url("placeholder.jpeg");
+}
+
+#food-page {
+    background-image: url("placeholder.jpeg");
+}
+
+#drinks-page {
+    background-image: url("placeholder.jpg");
+}
+
+
+/* MAIN PAGE BUTTONS */
+#to-food-page {
+    background-color: #6ac46d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50px;
+    width: 200px;
+}
+
+#to-drinks-page {
+    background-color: #6ac46d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+
+/* BACK BUTTONS */
+#back-btn,
+.back-btn {
+    background-color: #6ac46d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+
+/* FOOD AND DRINK CHOICES */
+.food-choice,
+.drink-choice {
+    background-color: #f4a8b8;
+    color: black;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.food-choice:hover,
+.drink-choice:hover {
+    background-color: #ef91a6;
+}
+
+
+/* INGREDIENT BUTTONS */
+.ingredient {
+    background-color: #d4f4d2;
+    border: 2px solid #6ac46d;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+.ingredient:hover {
+    background-color: #a8e6a3;
+}
+
+.ingredient:active {
+    cursor: grabbing;
+}
+
+
+/* FOOD AND DRINK PREPARATION AREAS */
+#food-tray,
+#drink-tray,
+.tray,
+.drop-zone {
+    background-color: #ffffff;
+    border: 3px dashed #6ac46d;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 90%;
+    min-height: 250px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* WHEN INGREDIENT IS DRAGGED OVER TRAY */
+.drag-over {
+    background-color: #d4f4d2 !important;
+}
+
+
+/* FOOD AND DRINK IMAGES */
+#food-display,
+#drink-display,
+.preview {
+    font-size: 80px;
+    margin: 20px;
+}
+
+
+/* ADDED INGREDIENTS */
+.added-item {
+    display: inline-block;
+    background-color: #ffe6b8;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.remove-ingredient {
+    background-color: #bd6363;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* CHECK AND RESET BUTTONS */
+#check-food,
+#check-drink,
+#reset-food,
+#reset-drink,
+#back-to-food,
+#back-to-drinks {
+    background-color: #6ac46d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* CORRECT AND INCORRECT FEEDBACK */
+.feedback,
+#food-feedback,
+#drink-feedback {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
 }
